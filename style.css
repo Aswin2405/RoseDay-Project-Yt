@@ -1,0 +1,73 @@
+body {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #fce4ec;
+       }
+
+       .container {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+           text-align: center;
+       }
+
+       .rose-image {
+           margin-bottom: 20px;
+       }
+
+       img {
+           width: 200px;
+           height: 200px;
+           object-fit: cover;
+           border-radius: 50%;
+           border: 5px solid #fff;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+
+       .message {
+           margin-bottom: 20px;
+       }
+
+       h1 {
+           font-size: 2.5em;
+           margin-bottom: 10px;
+           color: #e91e63;
+       }
+
+       p {
+           font-size: 1.2em;
+           line-height: 1.5;
+           color: #333;
+       }
+
+       .buttons {
+           display: flex;
+           justify-content: space-around;
+           margin-top: 20px;
+       }
+
+       button {
+           background-color: #e91e63;
+           color: white;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+       }
+
+       button:hover {
+           background-color: #c2185b;
+       }
+       @keyframes pulse {
+           0% { transform: scale(1); }
+           50% { transform: scale(1.1); }
+           100% { transform: scale(1); }
+       }
+
+       .animated-rose {
+           animation: pulse 1s ease-in-out;
+       }
